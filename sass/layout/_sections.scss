@@ -5,12 +5,7 @@
 
 }
 
-.about {
 
-	&__para {
-		font-size: 1.6rem;
-	}
-}
 
 .section-experience {
 	padding: 4rem;
@@ -43,6 +38,20 @@
 
 }
 
+.contact {
+	padding: 3rem 0;
+	&__para	{
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+.about {
+
+	&__para {
+		font-size: 1.6rem;
+	}
+}
 .about-text {
 	max-width: 50rem;
 	margin: 0 auto;

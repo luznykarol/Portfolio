@@ -4,28 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio Karol Rudziński</title>
-        <link rel="stylesheet" href="css/icon-font.css">
 		<link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/jpg" href="img/fox.jpg">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		
 	</head>
 	<body>
 
 		<div class="navigation">
 			<nav class="navigation__nav">
 				<div class="navigation__title-box">
-					<a href="#" class="navigation__title">Karol Rudziński</a>
+					<a href="#header" class="navigation__title">Karol Rudziński</a>
 				</div>
 				<ul class="navigation__list">
-					<li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Experience</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Skills</a></li>
+					<li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+					<li class="navigation__item"><a href="#experience" class="navigation__link">Experience</a></li>
+					<li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
 					<li class="navigation__item"><a href="#" class="navigation__link">Additional info</a></li>
 					<li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
 				</ul>
@@ -37,12 +35,12 @@
 			</nav>
 		</div>
 
-		<header class="header">			
+		<header class="header" id="header">			
 			<div class="header__box">
 				<img class="header__image" src="img/ja.jpg"></img>
 				<div class="header__box-text">
 					<p class="header__para">Hi there, my name is</p>
-					<h1 class="heading-primary">Karol Rudziński</h1>
+					<h1 class="heading-primary">Karol <span class="navigation__span">Rudziński</span></h1>
 					<a href="#about" class="btn header__btn">get to know me</a>				
 				</div>
 			</div>
@@ -65,8 +63,8 @@
 				</div>
 			</section>
 		
-			<section class="section-experience">
-				<h2 class="heading-secondary color-white">Completed projects</h2>
+			<section class="section-experience" id="experience">
+				<h2 class="heading-secondary color-white">My projects</h2>
 				<div class="project__container">	
 					<div class="project">
 						<div class="project__side project__side--front">
@@ -92,7 +90,7 @@
 						</div>
 						<div class="project__side project__side--back">
 							<div class="project__text-box">
-								<p class="project__para">The same site you are currently browsing. 
+								<p class="project__para">The same site you are currently browsing. Work in progress.
 								</p>
 							</div> 
 							<div class="project__link-box">	
@@ -108,8 +106,7 @@
 						</div>
 						<div class="project__side project__side--back">
 							<div class="project__text-box">
-								<p class="project__para">A project which I was a part of during my time @ the Torii Academy Bootcamp.
-									I was mostly responsible for the UI and UX side of it. It is currently being worked on by other people. 
+								<p class="project__para">A website I made based on a PSD file.  
 								</p>
 							</div> 
 							<div class="project__link-box">	
@@ -125,8 +122,7 @@
 						</div>
 						<div class="project__side project__side--back">
 							<div class="project__text-box">
-								<p class="project__para">A project which I was a part of during my time @ the Torii Academy Bootcamp.
-									I was mostly responsible for the UI and UX side of it. It is currently being worked on by other people. 
+								<p class="project__para">Another website made based on a PSD file. Its currently a work in progress.
 								</p>
 							</div> 
 							<div class="project__link-box">	
@@ -190,19 +186,22 @@
 				</div>
 			</section>
 
-			<section class="section-contact">
-				
+			<section class="contact">
+				<h2 class="heading-secondary color-white">Contact</h2>
+				<p class="contact__para"><i class="flaticon-message"></i>    karol.rudzinski1990@gmail.com</p>
+				<p class="contact__para"><i class="flaticon-phone-call"></i>    +48 606 405 049</p>
 			</section>
 
 		</main>
 
 		<footer class="footer">
-			<p class="footer__para">Made in a hurry (for the<span class="footer__span--2"> Daftcode internship</span> ;) ) by <span class="footer__span--1">Karol Rudziński </span>.2018</p>
-
+			<p class="footer__para">Made in a hurry (for the<span class="footer__span--2"> Daftcode internship</span> ;) ) by <span class="footer__span--1">Karol Rudziński </span> 2018</p>
 		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+
 
 
 

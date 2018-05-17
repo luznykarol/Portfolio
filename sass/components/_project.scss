@@ -63,25 +63,6 @@
 	&:hover &__side--back {
 		transform: rotateY(0);
 	}
-
-	//front-side styling
-	&__picture {
-		background-size: contain;
-		background-repeat: no-repeat;
-		height: 100%;
-
-		&--1 {
-			background-image: url(../img/bohater.png);
-		}
-
-		&--2 {
-			background-image: url(../img/bohater.png);
-		}
-
-		&--3 {
-			background-image: url(../img/bohater/png);
-		}
-	}
 	
 	&__text-box {
 		background-color: var(--color-white-2);
