@@ -1,0 +1,110 @@
+.icon {
+    font-size: 9rem;
+    text-align: center;
+}
+
+.skill-box {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    transition: all .4s ease;
+
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &--first {
+        transition: all .4s ease;
+        &:hover :first-child {
+            color: #fb7a5a;
+        }
+
+        @media (min-width: 845px) {
+            margin-right: 2rem;
+        }
+    }
+
+    &--second {
+        transition: all .4s ease;
+        &:hover :first-child {
+            color: #309ed9;
+        }
+
+        @media (min-width: 845px) {
+            margin-left: 2rem;
+        }
+    }
+
+    &--third {
+        transition: all .4s ease;
+
+        &:hover :first-child {
+            color: #CE639A;
+        }
+        &:hover {
+            color: var(--color-white);
+        }
+
+        @media (min-width: 845px) {
+            margin-right: 2rem;
+        }
+    }
+
+    &--fourth {
+        transition: all .4s ease;
+        &:hover :first-child {
+            color: #f7df1e;
+        }
+
+        @media (min-width: 845px) {
+            margin-left: 2rem;
+        }
+    }
+
+    &--fifth {
+        transition: all .4s ease;
+        &:hover :first-child {
+            color: #1069ae;
+        }
+        
+        @media (min-width: 845px) {
+            margin-right: 2rem;
+        }
+    }
+
+    &--sixth {
+        transition: all .4s ease;
+        &:hover :first-child {
+            color: #6e5494;
+        }
+
+        @media (min-width: 845px) {
+            margin-left: 2rem;
+        }
+
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: var(--color-grey);
+        color: var(--color-white);        
+    }
+
+    &:hover :nth-child(2) {
+        color: var(--color-white);  
+    }
+
+    @media (min-width: 845px) {
+        width: 45%;
+
+    }
+
+
+}
+
+.icon-resume {
+    position: relative;
+    z-index: 2000;
+    padding-right: 2rem;
+}

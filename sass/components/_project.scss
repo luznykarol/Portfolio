@@ -1,0 +1,113 @@
+.project {
+	width: 100%;
+	max-width: 70rem;
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 30rem;
+	margin: 1rem auto;
+	
+
+	&__img {
+		width: 100%;
+		height: 70%;
+		border: 2px solid var(--color-main);
+	}
+
+	&__container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		@media (min-width: 845px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			
+		}
+	}
+
+	&__side {
+
+		height: 30rem;
+		transition: all 1s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		backface-visibility: hidden;
+		border-radius: 3px;
+		overflow: hidden;
+
+		&--front {
+			position: relative;
+			background-color: var(--color-grey);
+		}
+
+		&--back {
+
+			transform: rotateY(180deg);
+								
+		}
+
+		@media (min-width: 650px) {
+			height: 45rem;
+			padding-bottom: 6rem;
+		}
+	}
+
+	&:hover &__side--front {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+	}
+
+	//front-side styling
+	&__picture {
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 100%;
+
+		&--1 {
+			background-image: url(../img/bohater.png);
+		}
+
+		&--2 {
+			background-image: url(../img/bohater.png);
+		}
+
+		&--3 {
+			background-image: url(../img/bohater/png);
+		}
+	}
+	
+	&__text-box {
+		background-color: var(--color-white-2);
+		border: 2px solid var(--color-main);
+		height: 70%;
+		padding: 2rem;
+	}
+
+	&__link-box {
+		margin-top: 1.5rem;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__para {
+		font-size: 1.9rem;
+		color: var(--color-grey);
+		padding: 0;
+	}
+
+	&__btn {
+		font-size: 2rem;
+	}
+
+	@media (min-width: 845px) {
+		width: 45%;	
+		margin: 3rem auto;
+	}
+}

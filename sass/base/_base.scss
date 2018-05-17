@@ -1,0 +1,39 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; 
+
+}
+ul {
+	list-style: none;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+html {
+	font-size: 62.5%; 
+
+	@media (min-width: 1000px) {
+		font-size: 75%;
+	}
+}
+
+body {
+	min-height: 100vh;
+	box-sizing: border-box; 
+	background-color: var(--color-grey);
+}
+
+
+
+.color-white {
+	color: var(--color-white) !important;
+}
+
+.color-grey {
+	color: var(--color-grey) !important;
+}
