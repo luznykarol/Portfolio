@@ -1,0 +1,27 @@
+
+.bubble {
+	display: none;
+	position: absolute;
+	top: 0;
+	background: linear-gradient(to right, var(--color-main-light), var(--color-main));
+	width: 10rem;
+	padding: .4rem 1rem;
+	height: 100%;
+
+    &__para {
+        color: var(--color-white);
+        font-size: 1.9rem;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        color: var(--color-white);
+    }
+
+    @media (min-width: 845px) {
+        width: 18rem;
+	}
+}

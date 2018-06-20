@@ -1,7 +1,7 @@
 .section-about {
 	padding: 4rem;
 	color: var(--color-grey);
-	background-color: var(--color-white-2);
+	background: linear-gradient(to right, var(--color-white-2), var(--color-white));
 
 }
 
@@ -21,7 +21,7 @@
 .skills {
     padding: 4rem;
     color: var(--color-grey);
-	background-color: var(--color-white-2);
+	background: linear-gradient(to right, var(--color-white-2), var(--color-white));
 	
 	&__container {
 		display: flex;

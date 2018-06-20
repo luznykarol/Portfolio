@@ -1,7 +1,6 @@
 .header {
 	position: relative;
 	height: 100vh;
-	background-color: var(--color-grey);
 	color: white;
 	margin-bottom: 2rem;
 
@@ -9,6 +8,10 @@
 		padding-top: 10rem;
 		max-width: 100rem;
 		margin: 0 auto;
+
+		@media(max-height: 600px) {
+			padding-top: 8.5rem;
+		}
 	}
 
 	&__box-text {
@@ -35,5 +38,4 @@
 		animation: moveInRight 1.5s ease-in;
 	}
 }
-
 

@@ -21,4 +21,8 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
+
+	$('.skill-box').hover(function() {
+		$(this).children('.bubble').slideToggle();
+	});
 });
