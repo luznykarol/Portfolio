@@ -1,0 +1,42 @@
+.form {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 600px) {
+	width: 50%;
+	margin: 0;
+	}
+
+	&__input {
+		position: relative;
+		padding: 1rem;
+		border-radius: 3px;
+		margin: .5rem 0;
+		border: none;
+		margin-top: 1rem;
+
+		&:focus {
+			outline-width: 0;
+		}
+	}
+
+	&__span {
+		text-align: center;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+	}
+
+	&__text {
+		margin-top: 1rem;
+		border-radius: 3px;
+		height: 100px;
+		max-width: 100%;
+		resize: none;
+	}
+}

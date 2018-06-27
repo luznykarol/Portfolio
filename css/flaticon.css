@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 17/05/2018 23:55
+  	Creation date: 21/06/2018 20:16
   	*/
 
 @font-face {
@@ -24,10 +24,9 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 20px;
+
 font-style: normal;
-margin-left: 20px;
 }
 
-.flaticon-message:before { content: "\f100"; }
-.flaticon-phone-call:before { content: "\f101"; }
+.flaticon-email:before { content: "\f100"; }
+.flaticon-phone-symbol-of-an-auricular-inside-a-circle:before { content: "\f101"; }

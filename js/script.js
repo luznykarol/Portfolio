@@ -13,16 +13,19 @@ $(document).ready(function() {
 		$('.burger').toggleClass('open');
 	});
 	
+	$('.skill-box').hover(function() {
+		$(this).children('.bubble').slideToggle();
+	})
+
 	var navbarHeight = $('.navigation__nav').outerHeight();
 
 	$('a').click(function(){
 		$('html, body').animate({
-			scrollTop: $( $(this).attr('href') ).offset().top -navbarHeight
+			scrollTop: $( $(this).attr('href') ).offset().top - navbarHeight
 		}, 1000);
 		return false;
 	});
 
-	$('.skill-box').hover(function() {
-		$(this).children('.bubble').slideToggle();
-	});
+
+
 });

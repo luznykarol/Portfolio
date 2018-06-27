@@ -1,5 +1,5 @@
 .project {
-	width: 100%;
+	width: 85%;
 	max-width: 70rem;
 	perspective: 150rem;
 	-moz-perspective: 150rem;
@@ -15,8 +15,13 @@
 
 	&__img {
 		width: 100%;
-		height: 84%;
+		height: 65%;
 		border-radius: 3px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+		@media (min-width: 845px) {
+			height: 84%;	
+		}
 	}
 
 	&__container {
@@ -112,10 +117,7 @@
 		}
 	}
 
-	&__btn {
-		width: 13rem;
-		font-size: 2rem;
-	}
+
 
 	@media (min-width: 845px) {
 		width: 40%;	
