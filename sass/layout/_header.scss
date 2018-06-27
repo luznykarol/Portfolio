@@ -13,7 +13,7 @@
 		align-content: space-between;
 		
 		@media (max-height: 630px) {
-			padding-top: 4rem;
+			padding-top: 5rem;
 		}
 	}
 
@@ -30,7 +30,7 @@
 		border-radius: 50%;
 		animation: moveInLeft 1.5s ease-in;
 
-		@media (min-width: 600px) {
+		@media (min-width: 650px) {
 			margin: 0 auto;
 			width: 23rem;
 			height: 23rem;

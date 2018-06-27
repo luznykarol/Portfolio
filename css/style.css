@@ -101,7 +101,7 @@ body {
     align-content: space-between; }
     @media (max-height: 630px) {
       .header__box {
-        padding-top: 4rem; } }
+        padding-top: 5rem; } }
   .header__box-text {
     text-align: center; }
   .header__image {
@@ -112,7 +112,7 @@ body {
     height: 20rem;
     border-radius: 50%;
     animation: moveInLeft 1.5s ease-in; }
-    @media (min-width: 600px) {
+    @media (min-width: 650px) {
       .header__image {
         margin: 0 auto;
         width: 23rem;
@@ -288,8 +288,11 @@ body {
     color: var(--color-main);
     transform: scale(1.1); }
   .btn--header {
-    font-size: 3rem;
+    font-size: 2rem;
     animation: moveInRight 1.5s ease-in; }
+    @media (min-width: 700px) {
+      .btn--header {
+        font-size: 3rem; } }
   .btn--project {
     width: 13rem;
     font-size: 2rem; }

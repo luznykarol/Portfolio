@@ -19,9 +19,13 @@
 		}
 
 		&--header {
-			font-size: 3rem;
+			font-size: 2rem;
 			animation: moveInRight 1.5s ease-in;
-		}
+
+			@media (min-width: 700px) {
+				font-size: 3rem;
+			}
+ 		}
 
 		&--project {
 
