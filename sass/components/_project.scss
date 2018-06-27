@@ -1,11 +1,11 @@
 .project {
-	width: 85%;
+	width: 100%;
 	max-width: 70rem;
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
 	height: 31rem;
-	margin: 1rem auto;
+	margin: 3rem auto;
 	border-radius: 3px;
 	
 	&__list {
@@ -15,15 +15,11 @@
 
 	&__img {
 		width: 100%;
-		height: 65%;
+		height: 85%;
 		border-radius: 3px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
-		@media (min-width: 845px) {
-			height: 84%;	
-		}
 	}
-
+	
 	&__container {
 		margin: 0 auto;
 		display: flex;
@@ -32,8 +28,7 @@
 
 		@media (min-width: 845px) {
 			flex-direction: row;
-			flex-wrap: wrap;
-			
+			flex-wrap: wrap;			
 		}
 	}
 
@@ -49,21 +44,17 @@
 		border-radius: 3px;
 		overflow: hidden;
 
+		@media (min-width: 700px) {
+			height: 35rem;
+		}
+
 		&--front {
 			position: relative;
-			//background-color: var(--color-grey);
 		}
 
 		&--back {
-
-			transform: rotateY(180deg);
-								
+			transform: rotateY(180deg);							
 		}
-
-		/*@media (min-width: 650px) {
-			height: 45rem;
-			padding-bottom: 6rem;
-		}*/
 	}
 
 	&:hover &__side--front {
@@ -117,11 +108,16 @@
 		}
 	}
 
-
+	@media (min-width: 700px) /*and (max-width: 844px)*/ {
+		margin: 5rem auto;
+	}
+	
+	@media (min-width: 700px) {
+		width: 80%;
+	}
 
 	@media (min-width: 845px) {
-		width: 40%;	
-		margin: 3rem auto;
+		width: 45%;	
 	}
 }
 

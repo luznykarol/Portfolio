@@ -1,17 +1,16 @@
 .header {
-	position: relative;
-	height: 100vh;
-	color: white;
-	margin-bottom: 2rem;
+    position: relative;
+    height: 100vh;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 	&__box {
-		padding-top: 10rem;
-		max-width: 100rem;
-		margin: 0 auto;
-
-		@media(max-height: 600px) {
-			padding-top: 8.5rem;
-		}
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
 	}
 
 	&__box-text {
@@ -22,10 +21,15 @@
 		border: 3px solid var(--color-main);
 		display: block;
 		margin: 1rem auto;
-		width: 230px;
-		height: 230px;
+		width: 23rem;
+		height: 23rem;
 		border-radius: 50%;
 		animation: moveInLeft 1.5s ease-in;
+
+		@media (min-width: 1980px) {
+			width: 25rem;
+			height: 25rem;
+		}
 	}
 
 	&__para {

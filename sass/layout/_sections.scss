@@ -3,7 +3,6 @@
 	color: var(--color-grey);
 	background: linear-gradient(to right, var(--color-white-2), var(--color-white));
 
-
 	&__text {
 		max-width: 50rem;
 		margin: 0 auto;
@@ -12,20 +11,14 @@
 	&__para {
 		font-size: 1.6rem;
 	}
-
 }
-
-
 
 .section-experience {
 	padding: 4rem;
 
-
 	@media (min-width: 845px) {
 		margin-bottom: 12rem;
 	}
-
-
 }
 
 .skills {
@@ -43,9 +36,7 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-
 	}
-
 }
 
 .contact {
@@ -114,6 +105,7 @@
 		font-size: 3rem;
 		transition: all .2s ease;
 		margin: 0 .5rem;
+		
 		&--git {
 			&:hover {
 				color: #6E5494;
@@ -141,14 +133,3 @@
 		}
 	}
 }
-/*
-.about {
-
-	&__para {
-		font-size: 1.6rem;
-	}
-}
-.about-text {
-	max-width: 50rem;
-	margin: 0 auto;
-}*/
