@@ -99,6 +99,9 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-between; }
+    @media (max-height: 630px) {
+      .header__box {
+        padding-top: 4rem; } }
   .header__box-text {
     text-align: center; }
   .header__image {
