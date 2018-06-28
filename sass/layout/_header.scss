@@ -15,6 +15,10 @@
 		@media (max-height: 630px) {
 			padding-top: 5rem;
 		}
+
+		@media (min-width: 630px) {
+			padding-top: 7rem;
+		}
 	}
 
 	&__box-text {

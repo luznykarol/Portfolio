@@ -13,8 +13,12 @@
 	}
 }
 
-.section-experience {
-	padding: 4rem;
+.experience {
+	padding: 3rem;
+
+	@media(min-width: 500px) {
+		padding: 4rem;
+	}
 
 	@media (min-width: 845px) {
 		margin-bottom: 12rem;
